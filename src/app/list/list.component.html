@@ -1,0 +1,16 @@
+<h1>League of Legend Champions</h1>
+<mat-grid-list cols="4" rowHeight="400">
+  <mat-grid-tile *ngFor="let champion of champions" [routerLink]="['/details/', champion.id]">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>{{champion.name}}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="{{champion.image}}" alt="{{champion.name}}">
+        <mat-card-content>
+          <p>
+            {{champion.skill}}
+          </p>
+        </mat-card-content>
+      </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
