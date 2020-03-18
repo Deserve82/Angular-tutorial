@@ -9,7 +9,7 @@ import { champs } from '../champions';
 })
 export class DetailsComponent implements OnInit {
   details = {
-    id: null, name: '', image: '', skill: ''
+    id: null, name: '', image: '', skill: '', story: ''
   };
   champions = champs;
   constructor(public route: ActivatedRoute, public router: Router) { }

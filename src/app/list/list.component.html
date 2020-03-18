@@ -1,4 +1,32 @@
-<h1>League of Legend Champions</h1>
+<html>
+<title>Full Background Cover</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+.bgimg {
+    border: 0;
+    padding: 0;
+    background-image: url('assets/profile/gang-776297__480.webp');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+</style>
+
+<div class="bgimg"></div>
+
+<body>
+<h1>Creppy story</h1>
 <mat-grid-list cols="4" rowHeight="400">
   <mat-grid-tile *ngFor="let champion of champions" [routerLink]="['/details/', champion.id]">
       <mat-card class="example-card">
@@ -12,3 +40,6 @@
       </mat-card>
   </mat-grid-tile>
 </mat-grid-list>
+
+</body>
+</html>
