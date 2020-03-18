@@ -8,10 +8,14 @@ import {champs} from '../champions';
   styleUrls: ['./list.component.css']
 })
 export class ListComponent implements OnInit {
-  champions = champs;
   constructor() { }
+  champions = champs;
+  currentState = 'initial';
 
   ngOnInit(): void {
+  }
+  changeState() {
+    this.currentState = this.currentState === "initial" ? "final" : "initial";
   }
 
 }
