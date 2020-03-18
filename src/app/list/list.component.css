@@ -8,3 +8,8 @@
 .zoom:hover {
   transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
+
+.bg{
+  background-image: url('src/assets/profile/gang-776297__480.webp');
+  background-size:cover;
+}
