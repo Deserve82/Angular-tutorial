@@ -2,3 +2,7 @@
 node_modules/
 
 .DS_Store
+
+src/assets/logos/hi.jpg
+
+src/assets/logos/Nachos.jpg

@@ -1,23 +1,32 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router} from '@angular/router';
-import { champs } from '../champions';
+import { Team } from '../champions';
+import { trigger, transition, animate, style, state } from '@angular/animations';
+
 
 @Component({
   selector: 'app-details',
   templateUrl: './details.component.html',
-  styleUrls: ['./details.component.css']
+  styleUrls: ['./details.component.css'],
+  animations: [trigger('fade', [
+  state('void', style({ opacity: 0 })),
+  transition('void <=> *', [animate('1.5s ease-in-out')])
+  ])]
 })
 export class DetailsComponent implements OnInit {
-  details = {
-    id: null, name: '', image: '', skill: '', story: ''
-  };
-  champions = champs;
+// tslint:disable-next-line:max-line-length
+details = { id: null, name: '',    image: '', location: '', stadium:    '', capacity:    null, manager: '', captain: '', lat: null, lng: null };
+  teams = Team;
+  showMap(lat: any, lng: any) {
+  this.router.navigate(['/maps', lat, lng]);
+}
+
   constructor(public route: ActivatedRoute, public router: Router) { }
 
   ngOnInit(): void {
     if (this.route.snapshot.paramMap.get('id') !== 'null') {
       const id = parseInt(this.route.snapshot.paramMap.get('id'), 0);
-      this.details = this.champions.find(x => x.id === id );
+      this.details = this.teams.find(x => x.id === id );
     }
   }
 }
