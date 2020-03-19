@@ -9,15 +9,8 @@
   transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
-<<<<<<< HEAD
 .mat-card:not([class*=mat-elevation-z]) {
     box-shadow: 0 2px 1px -1px rgba(0,0,0,1),
                 0 1px 1px 0 rgba(0,0,0,1),
                 0 1px 3px 0 rgba(0,0,0,1);
 }
-=======
-.bg{
-  background-image: url('src/assets/profile/gang-776297__480.webp');
-  background-size:cover;
-}
->>>>>>> master
