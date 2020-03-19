@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 export const Team = [
   { id: 1, name: 'Arsenal',    image: 'assets/logos/arsenal.png', location: 'London (Holloway)', stadium:    'Emirates Stadium',
   capacity:    60704, manager: 'Unai Emery', captain: 'Pierre-Emerick Aubameyang', lat: 51.554929, lng: -0.108449 },
@@ -41,39 +40,4 @@ export const Team = [
   capacity: 60000, manager: 'Manuel Pellegrini', captain: 'Mark Noble', lat: 51.538750, lng: -0.016625 },
   { id: 20, name:    'Wolverhampton Wanderers',    image: 'assets/logos/wolverhampton-wanderers.png', location: 'Wolverhampton',
   stadium: 'Molineux Stadium', capacity: 32050, manager: 'Nuno Espírito Santo', captain: 'Conor Coady', lat: 52.590301, lng: -2.130418 }
-=======
-
-export const champs = [
-  { id: 1,
-    name: '무서운 이야기 1',
-    skill: 'Thunder killer',
-    image: 'assets/profile/asdf.jpeg',
-    story: 'She is kind and strong'
-  },
-  { id: 2,
-    name: '무서운 이야기 2',
-    skill: 'Horrify kids',
-    image: 'assets/profile/fiddle.jpeg',
-    story: 'fiddle stick cosume little soul'
-  },
-    { id: 2,
-    name: '무서운 이야기 2',
-    skill: 'Horrify kids',
-    image: 'assets/profile/fiddle.jpeg',
-    story: 'fiddle stick cosume little soul'
-  },
-    { id: 2,
-    name: '무서운 이야기 2',
-    skill: 'Horrify kids',
-    image: 'assets/profile/fiddle.jpeg',
-    story: 'fiddle stick cosume little soul'
-  },
-    { id: 2,
-    name: '무서운 이야기 2',
-    skill: 'Horrify kids',
-    image: 'assets/profile/fiddle.jpeg',
-    story: 'fiddle stick cosume little soul'
-  },
-
->>>>>>> master
 ];
