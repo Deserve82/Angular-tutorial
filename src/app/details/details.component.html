@@ -7,7 +7,7 @@
     <mat-card-title>{{details.name}}</mat-card-title>
     <mat-card-subtitle>{{details.location}}</mat-card-subtitle>
   </mat-card-header>
-  <img mat-card-image @fade src="{{details.image}}" alt="{{details.name}}">
+  <img mat-card-image src="{{details.image}}" alt="{{details.name}}">
   <mat-card-content>
     <dl>
       <dt class="bold">Stadium:</dt>
@@ -29,7 +29,7 @@
 </mat-card>
 
   <mat-card class="example-card">
-    <mat-card-content>
+    <mat-card-content @fade>
   {{details.name}}!!
     From the offset, the hiring of Unai Emery as manager of Arsenal Football Club was a curious one. Conversely, he had the credentials; on paper, he was a serial winner, most notably in cup competitions where he famously achieved an unprecedented three consecutive Europa League victories. However, that hinted at a ceiling,
     and his time at Paris Saint Germain was fraught with warning signs; the falling out and constant power-play with star players, and the loss of Ligue 1 to Monaco in his first season.

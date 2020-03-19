@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router} from '@angular/router';
 import { Team } from '../champions';
 import { trigger, transition, animate, style, state } from '@angular/animations';
+import {slideInOutAnimation} from '../_animations';
 
 
 @Component({
@@ -10,8 +11,8 @@ import { trigger, transition, animate, style, state } from '@angular/animations'
   styleUrls: ['./details.component.css'],
   animations: [trigger('fade', [
   state('void', style({ opacity: 0 })),
-  transition('void <=> *', [animate('1.5s ease-in-out')])
-  ])]
+  transition('void <=> *', [animate('2s ease-in-out')])
+  ]), slideInOutAnimation]
 })
 export class DetailsComponent implements OnInit {
 // tslint:disable-next-line:max-line-length
